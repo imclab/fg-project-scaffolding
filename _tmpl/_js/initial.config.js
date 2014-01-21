@@ -14,6 +14,7 @@
 
 	// test for font-face version to load via Data URI'd CSS
 	// Basically, load WOFF unless it's android's default browser, which needs TTF
+	/**
 	var fontSrcRef = null, ua;
 	if ( allowType ) {
 		fontSrcRef = win.document.getElementById( "fontsProximaWOFF" );
@@ -23,6 +24,7 @@
 			fontSrcRef = win.document.getElementById( "fontsProximaTTF" );
 		}
 	}
+ */
 
 	var initialJS = win.document.getElementById( "initialjs" ),
 		docClasses = [ "enhancing enhanced" ],
