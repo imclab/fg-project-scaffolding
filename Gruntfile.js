@@ -164,17 +164,6 @@ module.exports = function(grunt) {
 				dest: '<%= concat.js_respond.dest %>'
 			}
 		},
-		jsonmin: {
-			dist: {
-				options: {
-					stripWhitespace: true,
-					stripComments: true
-				},
-				files: {
-					"_dist/data.json" : "_tmpl/data.json"
-				}
-			}
-		},
 		svgmin: {                                           // Task
 			options: {                                      // Configuration that will be passed directly to SVGO
 				plugins: [{
@@ -238,7 +227,6 @@ module.exports = function(grunt) {
 		'concat',
 		'clean:sass',
 		'copy',
-		'jsonmin',
 		'svgmin',
 		'grunticon',
 		'chmod:readonly'
@@ -265,7 +253,6 @@ module.exports = function(grunt) {
 		'chmod:writeable',
 		'qunit',
 		'copy',
-		'jsonmin',
 		'svgmin',
 		'chmod:readonly'
 	]);
@@ -304,7 +291,6 @@ module.exports = function(grunt) {
 		'cssmin',
 		'uglify',
 		'copy',
-		'jsonmin',
 		'svgmin',
 		'grunticon'
 	]);
