@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 			},
 			js_main: {
 				src: [
-					'_tmpl/_js/_lib/shoestring.js',
+					'_tmpl/_js/_lib/jquery.js',
 					// keep this globalenhance file last!
 					'_tmpl/_js/globalenhance.js'
 				],
